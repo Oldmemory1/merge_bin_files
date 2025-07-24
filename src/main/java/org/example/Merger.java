@@ -5,11 +5,12 @@ import lombok.ToString;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @ToString
 public class Merger {
-    private List<String> BinaryFiles = new ArrayList<String>();
+    private List<String> BinaryFiles = Collections.emptyList();
     private String OutputFileName;
     public Merger(List<String> InputBinaryFiles,String OutputFileName) {
         this.BinaryFiles.addAll(InputBinaryFiles);
